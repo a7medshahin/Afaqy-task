@@ -1,0 +1,32 @@
+<div dir="{{ 'dir' | translate }}" [class.rtl]="('dir' | translate) === 'rtl'">
+    <app-nav></app-nav>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <br>
+                <br>
+                <br>
+
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">{{'time' | translate}}</th>
+                            <th scope="col">{{'user' | translate}}</th>
+                            <th scope="col">{{'note' | translate}}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let log of logs; let i = index">
+                            <td>{{log.time}}</td>
+                            <td>{{log.name}}</td>
+                            <td>{{log.note}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="text-muted text-right">
+                    This is a static data.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

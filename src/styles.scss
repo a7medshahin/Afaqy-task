@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Cairo&display=swap');
+div,
+p,
+a,
+span {
+    font-family: 'Cairo', sans-serif;
+}
+
+.btn {
+    color: rgba(255, 255, 255, .5) !important;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+}
+
+.dropdown-menu {
+    left: auto !important;
+    right: 0 !important;
+    text-align: center;
+}
+
+.dropdown-toggle::after {
+    vertical-align: inherit !important;
+}
+
+.btn.focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.rtl {
+    .dropdown-menu {
+        right: auto !important;
+        left: 0 !important;
+    }
+    .text-right {
+        text-align: left !important;
+    }
+    table {
+        text-align: right;
+    }
+}

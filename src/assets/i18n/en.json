@@ -1,0 +1,15 @@
+{
+    "dir": "ltr",
+    "nav": {
+        "home": "Home",
+        "lang": "Lang",
+        "maps": "Map"
+    },
+    "lang": {
+        "ar": "Arabic",
+        "en": "English"
+    },
+    "time": "Time",
+    "user": "User",
+    "note": "Note"
+}
